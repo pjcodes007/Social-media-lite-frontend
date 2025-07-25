@@ -5,11 +5,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import {
-  Camera,
-  Image,
-  Heart,
-  Clapperboard,
-  Palette,
+  Camera
 } from "lucide-react";
 
 interface loginFormData {
