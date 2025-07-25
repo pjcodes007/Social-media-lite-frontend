@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import {
-  Camera
+  Camera,
 } from "lucide-react";
 
 interface loginFormData {
@@ -94,9 +95,9 @@ const Login = () => {
         </form>
         <p className="text-center text-sm text-muted-foreground">
           Don’t have an account?{" "}
-          <a href="/signup" className="underline text-primary">
-            Sign up
-          </a>
+        <Link to="/signup" className="text-blue-500 underline">
+          Sign Up
+        </Link>
         </p>
       </div>
     </div>
